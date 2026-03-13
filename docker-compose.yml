@@ -1,0 +1,9 @@
+services:
+  prompt-router:
+    build: .
+    container_name: llm_prompt_router
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    command: python main.py

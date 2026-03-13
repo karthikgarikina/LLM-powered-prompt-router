@@ -86,23 +86,21 @@ Provides actionable career advice and professional guidance.
     git https://github.com/karthikgarikina/LLM-powered-prompt-router
     cd LLM-powered-prompt-router
 
-### 2. Install dependencies
-
-    pip install -r requirements.txt
-
-### 3. Add API key
+### 2. Add API key
 
 Change `.env` file:
 
     GROQ_API_KEY=your_api_key_here
+
+### 3. Run docker
+
+    docker compose run --rm prompt-router    
 
 ------------------------------------------------------------------------
 
 ## Running the Application
 
 Start the CLI interface:
-
-    python main.py
 
 Example:
 
