@@ -88,7 +88,7 @@ Provides actionable career advice and professional guidance.
 
 ### 2. Add API key
 
-Change `.env` file:
+Create `.env` file:
 
     GROQ_API_KEY=your_api_key_here
 
