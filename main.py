@@ -1,6 +1,17 @@
 from classifier import classify_intent
 from router import route_and_respond
 from logger import log_request
+import signal
+import sys
+
+
+def graceful_shutdown(signum, frame):
+    print("\nShutting down AI Prompt Router...")
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, graceful_shutdown)
+signal.signal(signal.SIGTERM, graceful_shutdown)
 
 
 def main():

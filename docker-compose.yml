@@ -7,3 +7,5 @@ services:
     stdin_open: true
     tty: true
     command: python main.py
+    volumes:
+      - .:/app
